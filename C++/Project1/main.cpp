@@ -1,15 +1,28 @@
-// Programmer: Aidan Fox
-// Section 4 Challenge
-// Prompt user to enter their favorite number between 1 and 100, then read from console.
+/* Author: Aidan Fox
+*  calculate area of a room in square feet.
+*/
+
 
 #include <iostream>
 
+using std::cin;
+using std::cout;
+using std::endl;
+
 int main() {
-	int favoriteNumber;
-	std::cout << "Enter your favorite number between 1 and 100: ";
-	std::cin >> favoriteNumber;
-	std::cout << "Amazing!! That's my favorite number too!" << std::endl;
-	std::cout << "No really, " << favoriteNumber <<
-		" is my favorite number!" << std::endl;
+
+	cout << "Enter the width of the room: ";
+
+	int roomWidth{ 0 };
+	cin >> roomWidth;
+	
+	cout << "Enter the lentgh of the room: ";
+	
+	int roomLength{ 0 };
+	cin >> roomLength;
+	
+	cout << "The area of the room is " << roomWidth * roomLength << 
+		" square feet." << endl;
+
 	return 0;
 }
