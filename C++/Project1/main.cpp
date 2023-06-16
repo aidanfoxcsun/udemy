@@ -1,11 +1,13 @@
 /* Author: Aidan Fox
 *  Section 6
-*  Constants
+*  Challenge
 * 
 *  Problem:
 * 
 *  Carpet Cleaning Service
-*  Charges $30 per room
+*  Charges: 
+*		$25 per small room
+*		$35 per large room
 *  Sales Tax rate is 6%
 *  Estimates Valid for 30 days
 *  
@@ -23,23 +25,34 @@ using std::endl;
 
 int main() {
 
-	const double taxRate = 0.06;
-	const int chargePerRoom = 30;
-	const int validDays = 30;
+	const double taxRate{ 0.06 };
+	const double chargePerSmallRoom { 25 };
+	const double chargePerLargeRoom{ 35 };
+	const int validDays{ 30 }; //days
 
-	int numberOfRooms;
+	int numberOfSmallRooms{0};
+	int numberOfLargeRooms{ 0 };
 
-	cout << "Please Enter the number of rooms you would like cleaned: ";
-	cin >> numberOfRooms;
+	cout << "Welcopme to Aidan's Carpet Cleaning Service!" << endl;
+	cout << "\n";
 
-	int cost = numberOfRooms * chargePerRoom;
+	cout << "Please Enter the number of  small rooms you would like cleaned: ";
+	cin >> numberOfSmallRooms;
+	cout << "Please Enter the number of  large rooms you would like cleaned: ";
+	cin >> numberOfLargeRooms;
+
+	cout << "\n";
+
+	int cost = (numberOfSmallRooms * chargePerSmallRoom) +(numberOfLargeRooms*chargePerLargeRoom);
 	double tax = taxRate * cost;
 	double total = tax + cost;
 
 	cout << "Estimate for Carpet Cleaning Serivce: " << endl;
 	cout << "\n";
-	cout << "Number of rooms: $" << numberOfRooms << endl;
-	cout << "Price per Room: $" << chargePerRoom << endl;
+	cout << "Number of small rooms: " << numberOfSmallRooms << endl;
+	cout << "Number of large rooms: " << numberOfLargeRooms << endl;
+	cout << "Price per small room: $" << chargePerSmallRoom << endl;
+	cout << "Price per large room: $" << chargePerLargeRoom << endl;
 	cout << "Cost: $" << cost << endl;
 	cout << "Tax: $" << tax << endl;
 	cout << "=================================" << endl;
