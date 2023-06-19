@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays and Vectors", "Arrays and Vectors.vcxproj", "{FFE50C6A-2360-4303-86B2-123136CA7680}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Debug|x64.ActiveCfg = Debug|x64
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Debug|x64.Build.0 = Debug|x64
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Debug|x86.ActiveCfg = Debug|Win32
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Debug|x86.Build.0 = Debug|Win32
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Release|x64.ActiveCfg = Release|x64
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Release|x64.Build.0 = Release|x64
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Release|x86.ActiveCfg = Release|Win32
+		{FFE50C6A-2360-4303-86B2-123136CA7680}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01E7C4E9-098C-47AD-AD45-8585E788F5E6}
+	EndGlobalSection
+EndGlobal
