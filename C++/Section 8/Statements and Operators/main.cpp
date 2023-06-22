@@ -2,7 +2,7 @@
 *  Section 8
 *  Statements and Operators
 * 
-*  Euros to USD
+*  Average of 3 numbers
 */
 
 #include <iostream>
@@ -12,22 +12,20 @@ using std::cin;
 using std::endl;
 
 int main() {
+	int total{};
+	int num1{}, num2{}, num3{};
+	const int count{ 3 };
 
-	// As of June 22, 2023
-	// 1 : 1.1 (EUR : USD)
+	cout << "Enter 3 integers separated by spaces: ";
+	cin >> num1 >> num2 >> num3;
+	total = num1 + num2 + num3;
 
-	const double usdPerEur{ 1.1 };
+	double average{0.0};
+	average = static_cast<double>(total) / count;
+	// average = (double)total/count;  OLD METHOD!
 
-	double euros{ 0.0 };
-	double dollars{ 0.0 };
-
-	cout << "Welcome to the EUR to USD converter!" << endl;
-	cout << "Enter the value in Euros: ";
-	
-	cin >> euros;
-	dollars = euros * usdPerEur;
-
-	cout << euros << " EUR is " << dollars << " USD" << endl;
-	cout << endl;
+	cout << "Your three numbers are: " << num1 << ", " << num2 << ", " << num3 << endl;
+	cout << "The sum of your numbers is: " << total << endl;
+	cout << "The average of your three integers is: " << average << endl;
 	return 0;
 }
