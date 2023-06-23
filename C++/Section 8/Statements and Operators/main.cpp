@@ -61,11 +61,11 @@ int main() {
 	penny = userAmount;
 
 	cout << "You can provide this change as follows: " << endl;
-	cout << "Dollars: " << dollar << endl;
+	cout << "Dollars : " << dollar << endl;
 	cout << "Quarters: " << quarter << endl;
-	cout << "Dimes: " << dime << endl;
-	cout << "Nickels: " << nickel << endl;
-	cout << "Pennies: " << penny << endl;
+	cout << "Dimes   : " << dime << endl;
+	cout << "Nickels : " << nickel << endl;
+	cout << "Pennies : " << penny << endl;
 
 	return 0;
 }
